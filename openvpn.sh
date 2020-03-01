@@ -425,7 +425,6 @@ stunconf
 privoxconfig
 setall
 monitoring
-lolcat
 
 cp /lib/systemd/system/openvpn\@.service /etc/systemd/system/openvpn\@.service
 mv /etc/nginx/nginx.conf /etc/nginx/nginx.conf.bak
