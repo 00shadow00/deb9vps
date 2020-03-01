@@ -5,10 +5,10 @@ User=trial`</dev/urandom tr -dc X-Z0-9 | head -c4`
 Pass=`</dev/urandom tr -dc a-f0-9 | head -c9`
 
 # Trial Account Expiration Day/s
-Days="1"
+Days="2"
 
 Today=`date +%s`
-Days_Detailed=$(( $Days * 86400 ))
+Days_Detailed=$(( $Days * 3600 ))
 Expire_On=$(($Today + $Days_Detailed))
 Expiration=$(date -u --date="1970-01-01 $Expire_On sec GMT" +%Y/%m/%d)
 Expiration_Display=$(date -u --date="1970-01-01 $Expire_On sec GMT" '+%d %b %Y')
